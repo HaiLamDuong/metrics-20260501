@@ -1,0 +1,15 @@
+2026-05-01 15:54:01 | INFO    | dpfl | Experiment start: algorithm=trust_d2b, dataset=mnist, model=mlp, device=cuda
+2026-05-01 15:54:01 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=50, noise_mode=none, attack=scale
+2026-05-01 15:54:01 | INFO    | dpfl.data.mnist_dataset | Loading MNIST dataset...
+2026-05-01 15:54:01 | INFO    | dpfl.data.mnist_dataset | MNIST loaded: 60000 train, 10000 test samples
+2026-05-01 15:56:02 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=25450, X_test=(10000, 1, 28, 28), train clients N=300, max_n_samples=2000
+2026-05-01 15:56:02 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=25450, split=iid
+2026-05-01 15:56:02 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 15:56:02 | INFO    | dpfl.algorithms.trust_aware.simulator | Trust-Aware D2B-DP: rounds=50, n_workers=5, layers=4, ρ∈[0.500,10.000]
+2026-05-01 15:56:02 | DEBUG   | dpfl.algorithms.trust_aware.simulator | Round 0 Phase 1+2: 0.31s
+2026-05-01 15:56:03 | INFO    | dpfl.core.base_simulator | Round   1/50 | Acc: 0.3577 | Loss: 1.9622 | eps_max: 0.44 eps_avg: 0.44 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 15:56:03 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['0.34', '0.33', '0.34', '0.34', '0.35'], attacker: []
+2026-05-01 15:56:04 | DEBUG   | dpfl.algorithms.trust_aware.simulator | Round 1 Phase 1+2: 0.11s
+2026-05-01 15:56:23 | INFO    | dpfl.core.base_simulator | Round   2/50 | Acc: 0.5629 | Loss: 1.5824 | eps_max: 0.66 eps_avg: 0.66 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 15:56:23 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['0.36', '0.35', '0.34', '0.35', '0.35'], attacker: []
+2026-05-01 15:56:24 | DEBUG   | dpfl.algorithms.trust_aware.simulator | Round 2 Phase 1+2: 0.23s

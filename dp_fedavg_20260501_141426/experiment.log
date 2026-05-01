@@ -1,0 +1,94 @@
+2026-05-01 14:14:26 | INFO    | dpfl | Experiment start: algorithm=dp_fedavg, dataset=mnist, model=mlp, device=cuda
+2026-05-01 14:14:26 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=50, noise_mode=post_training, attack=scale
+2026-05-01 14:14:26 | INFO    | dpfl.data.mnist_dataset | Loading MNIST dataset...
+2026-05-01 14:14:26 | INFO    | dpfl.data.mnist_dataset | MNIST loaded: 60000 train, 10000 test samples
+2026-05-01 14:15:36 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=25450, X_test=(10000, 1, 28, 28), train clients N=300, max_n_samples=7000
+2026-05-01 14:15:36 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=25450, split=iid
+2026-05-01 14:15:36 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 14:15:36 | INFO    | dpfl.algorithms.fedavg.simulator | FedAvg data_sizes set: min=7000, max=7000, total=2100000
+2026-05-01 14:15:36 | INFO    | dpfl.core.base_simulator | Round   1/50 | Acc: 0.1035 | Loss: 5.6517 | eps: 3.31 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:36 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.48', '25.39', '25.70', '25.49', '25.60'], attacker: []
+2026-05-01 14:15:37 | INFO    | dpfl.core.base_simulator | Round   2/50 | Acc: 0.1141 | Loss: 8.5356 | eps: 3.76 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.71', '25.64', '25.52', '25.49', '25.60'], attacker: []
+2026-05-01 14:15:37 | INFO    | dpfl.core.base_simulator | Round   3/50 | Acc: 0.1187 | Loss: 11.4392 | eps: 4.10 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.47', '25.42', '25.55', '25.53', '25.45'], attacker: []
+2026-05-01 14:15:38 | INFO    | dpfl.core.base_simulator | Round   4/50 | Acc: 0.1221 | Loss: 14.0700 | eps: 4.44 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:38 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.50', '25.51', '25.42', '25.58', '25.57'], attacker: []
+2026-05-01 14:15:38 | INFO    | dpfl.core.base_simulator | Round   5/50 | Acc: 0.1245 | Loss: 16.6672 | eps: 4.77 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:38 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.57', '25.45', '25.65', '25.38', '25.63'], attacker: []
+2026-05-01 14:15:38 | INFO    | dpfl.core.base_simulator | Round   6/50 | Acc: 0.1271 | Loss: 19.3274 | eps: 5.11 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:38 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.55', '25.51', '25.42', '25.35', '25.55'], attacker: []
+2026-05-01 14:15:39 | INFO    | dpfl.core.base_simulator | Round   7/50 | Acc: 0.1265 | Loss: 21.6679 | eps: 5.45 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:39 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.65', '25.47', '25.56', '25.29', '25.41'], attacker: []
+2026-05-01 14:15:39 | INFO    | dpfl.core.base_simulator | Round   8/50 | Acc: 0.1286 | Loss: 23.7973 | eps: 5.56 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:39 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.43', '25.59', '25.65', '25.25', '25.64'], attacker: []
+2026-05-01 14:15:40 | INFO    | dpfl.core.base_simulator | Round   9/50 | Acc: 0.1336 | Loss: 25.7440 | eps: 5.66 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:40 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.56', '25.57', '25.46', '25.44', '25.60'], attacker: []
+2026-05-01 14:15:40 | INFO    | dpfl.core.base_simulator | Round  10/50 | Acc: 0.1352 | Loss: 27.5110 | eps: 5.75 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:40 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.70', '25.52', '25.26', '25.64', '25.31'], attacker: []
+2026-05-01 14:15:40 | INFO    | dpfl.core.base_simulator | Round  11/50 | Acc: 0.1405 | Loss: 29.0880 | eps: 5.85 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:40 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.58', '25.47', '25.52', '25.40', '25.49'], attacker: []
+2026-05-01 14:15:41 | INFO    | dpfl.core.base_simulator | Round  12/50 | Acc: 0.1421 | Loss: 30.3804 | eps: 5.94 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:41 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.55', '25.56', '25.51', '25.60', '25.66'], attacker: []
+2026-05-01 14:15:41 | INFO    | dpfl.core.base_simulator | Round  13/50 | Acc: 0.1442 | Loss: 32.4031 | eps: 6.04 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:41 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.55', '25.31', '25.43', '25.60', '25.42'], attacker: []
+2026-05-01 14:15:41 | INFO    | dpfl.core.base_simulator | Round  14/50 | Acc: 0.1469 | Loss: 33.9655 | eps: 6.13 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:41 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.63', '25.48', '25.55', '25.55', '25.62'], attacker: []
+2026-05-01 14:15:42 | INFO    | dpfl.core.base_simulator | Round  15/50 | Acc: 0.1487 | Loss: 35.7444 | eps: 6.23 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:42 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.55', '25.76', '25.69', '25.62', '25.53'], attacker: []
+2026-05-01 14:15:42 | INFO    | dpfl.core.base_simulator | Round  16/50 | Acc: 0.1498 | Loss: 37.4154 | eps: 6.32 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:42 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.44', '25.65', '25.50', '25.58', '25.52'], attacker: []
+2026-05-01 14:15:42 | INFO    | dpfl.core.base_simulator | Round  17/50 | Acc: 0.1506 | Loss: 39.1554 | eps: 6.42 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:42 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.41', '25.54', '25.39', '25.28', '25.72'], attacker: []
+2026-05-01 14:15:43 | INFO    | dpfl.core.base_simulator | Round  18/50 | Acc: 0.1538 | Loss: 40.6490 | eps: 6.51 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:43 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.45', '25.35', '25.36', '25.68', '25.47'], attacker: []
+2026-05-01 14:15:43 | INFO    | dpfl.core.base_simulator | Round  19/50 | Acc: 0.1557 | Loss: 42.0915 | eps: 6.61 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:43 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.45', '25.73', '25.63', '25.65', '25.77'], attacker: []
+2026-05-01 14:15:44 | INFO    | dpfl.core.base_simulator | Round  20/50 | Acc: 0.1556 | Loss: 43.3394 | eps: 6.70 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:44 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.48', '25.46', '25.52', '25.33', '25.39'], attacker: []
+2026-05-01 14:15:44 | INFO    | dpfl.core.base_simulator | Round  21/50 | Acc: 0.1579 | Loss: 44.8428 | eps: 6.80 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:44 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.50', '25.27', '25.43', '25.54', '25.45'], attacker: []
+2026-05-01 14:15:44 | INFO    | dpfl.core.base_simulator | Round  22/50 | Acc: 0.1608 | Loss: 46.5131 | eps: 6.89 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:44 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.18', '25.48', '25.43', '25.43', '25.55'], attacker: []
+2026-05-01 14:15:45 | INFO    | dpfl.core.base_simulator | Round  23/50 | Acc: 0.1618 | Loss: 47.4834 | eps: 6.99 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:45 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.62', '25.76', '25.58', '25.47', '25.61'], attacker: []
+2026-05-01 14:15:45 | INFO    | dpfl.core.base_simulator | Round  24/50 | Acc: 0.1618 | Loss: 49.1156 | eps: 7.08 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:45 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.38', '25.39', '25.63', '25.55', '25.39'], attacker: []
+2026-05-01 14:15:45 | INFO    | dpfl.core.base_simulator | Round  25/50 | Acc: 0.1629 | Loss: 50.2289 | eps: 7.18 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:45 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.46', '25.84', '25.43', '25.48', '25.46'], attacker: []
+2026-05-01 14:15:46 | INFO    | dpfl.core.base_simulator | Round  26/50 | Acc: 0.1649 | Loss: 51.4158 | eps: 7.27 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:46 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.37', '25.51', '25.37', '25.42', '25.20'], attacker: []
+2026-05-01 14:15:46 | INFO    | dpfl.core.base_simulator | Round  27/50 | Acc: 0.1677 | Loss: 52.4284 | eps: 7.37 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:46 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.38', '25.49', '25.54', '25.44', '25.56'], attacker: []
+2026-05-01 14:15:47 | INFO    | dpfl.core.base_simulator | Round  28/50 | Acc: 0.1696 | Loss: 53.2343 | eps: 7.46 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:47 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.63', '25.56', '25.45', '25.29', '25.57'], attacker: []
+2026-05-01 14:15:47 | INFO    | dpfl.core.base_simulator | Round  29/50 | Acc: 0.1709 | Loss: 54.3545 | eps: 7.56 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:47 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.46', '25.46', '25.45', '25.39', '25.50'], attacker: []
+2026-05-01 14:15:47 | INFO    | dpfl.core.base_simulator | Round  30/50 | Acc: 0.1757 | Loss: 55.0852 | eps: 7.65 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:47 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.74', '25.51', '25.39', '25.33', '25.41'], attacker: []
+2026-05-01 14:15:48 | INFO    | dpfl.core.base_simulator | Round  31/50 | Acc: 0.1767 | Loss: 56.0146 | eps: 7.75 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:48 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.33', '25.36', '25.54', '25.64', '25.51'], attacker: []
+2026-05-01 14:15:48 | INFO    | dpfl.core.base_simulator | Round  32/50 | Acc: 0.1777 | Loss: 57.3098 | eps: 7.84 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:48 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.54', '25.60', '25.48', '25.29', '25.37'], attacker: []
+2026-05-01 14:15:48 | INFO    | dpfl.core.base_simulator | Round  33/50 | Acc: 0.1797 | Loss: 58.2449 | eps: 7.94 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:48 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.66', '25.48', '25.41', '25.51', '25.58'], attacker: []
+2026-05-01 14:15:49 | INFO    | dpfl.core.base_simulator | Round  34/50 | Acc: 0.1805 | Loss: 59.3355 | eps: 8.03 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:15:49 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.39', '25.37', '25.51', '25.43', '25.52'], attacker: []
+2026-05-01 14:15:49 | WARNING | dpfl.algorithms.fedavg.simulator | Round  34/50 | Budget exceeded (eps=8.03)
+2026-05-01 14:15:50 | INFO    | dpfl | Experiment complete in 83.1s
+============================================================
+REPORT: DP-SGD Decentralized Federated Learning
+============================================================
+Timestamp:                  20260501_141426
+Rounds completed:           34
+Attack-active rounds:       0  (from round 99999)
+Final accuracy:             0.1805
+Final test loss:            59.3355
+Final epsilon:              8.03
+Best alpha:                 3.0
+Avg precision:              0.0000
+Avg recall:                 0.0000
+Avg F1 score:               0.0000
+Avg update norm (honest):   25.5235
+Avg update norm (attacker): 0.0000
+============================================================

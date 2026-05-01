@@ -1,0 +1,44 @@
+2026-05-01 14:12:04 | INFO    | dpfl | Experiment start: algorithm=dp_fedavg, dataset=mnist, model=mlp, device=cuda
+2026-05-01 14:12:04 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=50, noise_mode=post_training, attack=scale
+2026-05-01 14:12:04 | INFO    | dpfl.data.mnist_dataset | Loading MNIST dataset...
+2026-05-01 14:12:04 | INFO    | dpfl.data.mnist_dataset | MNIST loaded: 60000 train, 10000 test samples
+2026-05-01 14:13:17 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=25450, X_test=(10000, 1, 28, 28), train clients N=300, max_n_samples=4000
+2026-05-01 14:13:17 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=25450, split=iid
+2026-05-01 14:13:17 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 14:13:17 | INFO    | dpfl.algorithms.fedavg.simulator | FedAvg data_sizes set: min=4000, max=4000, total=1200000
+2026-05-01 14:13:18 | INFO    | dpfl.core.base_simulator | Round   1/50 | Acc: 0.1067 | Loss: 4.3960 | eps: 4.63 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:18 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.02', '20.95', '21.21', '21.03', '21.12'], attacker: []
+2026-05-01 14:13:18 | INFO    | dpfl.core.base_simulator | Round   2/50 | Acc: 0.1190 | Loss: 6.0867 | eps: 5.60 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:18 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.21', '21.15', '21.06', '21.03', '21.12'], attacker: []
+2026-05-01 14:13:19 | INFO    | dpfl.core.base_simulator | Round   3/50 | Acc: 0.1250 | Loss: 7.8006 | eps: 6.00 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:19 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.02', '20.97', '21.08', '21.06', '20.99'], attacker: []
+2026-05-01 14:13:19 | INFO    | dpfl.core.base_simulator | Round   4/50 | Acc: 0.1295 | Loss: 9.3368 | eps: 6.40 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:19 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.04', '21.05', '20.97', '21.11', '21.09'], attacker: []
+2026-05-01 14:13:19 | INFO    | dpfl.core.base_simulator | Round   5/50 | Acc: 0.1336 | Loss: 10.8486 | eps: 6.80 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:19 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.10', '21.00', '21.16', '20.94', '21.15'], attacker: []
+2026-05-01 14:13:19 | INFO    | dpfl.core.base_simulator | Round   6/50 | Acc: 0.1376 | Loss: 12.3857 | eps: 7.19 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:19 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.08', '21.05', '20.97', '20.91', '21.08'], attacker: []
+2026-05-01 14:13:20 | INFO    | dpfl.core.base_simulator | Round   7/50 | Acc: 0.1381 | Loss: 13.7140 | eps: 7.59 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:20 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.16', '21.01', '21.09', '20.87', '20.96'], attacker: []
+2026-05-01 14:13:20 | INFO    | dpfl.core.base_simulator | Round   8/50 | Acc: 0.1412 | Loss: 14.9005 | eps: 7.94 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:20 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['20.98', '21.11', '21.16', '20.83', '21.16'], attacker: []
+2026-05-01 14:13:20 | INFO    | dpfl.core.base_simulator | Round   9/50 | Acc: 0.1472 | Loss: 15.9832 | eps: 8.11 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 14:13:20 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['21.09', '21.09', '21.01', '20.98', '21.12'], attacker: []
+2026-05-01 14:13:20 | WARNING | dpfl.algorithms.fedavg.simulator | Round   9/50 | Budget exceeded (eps=8.11)
+2026-05-01 14:13:21 | INFO    | dpfl | Experiment complete in 76.6s
+============================================================
+REPORT: DP-SGD Decentralized Federated Learning
+============================================================
+Timestamp:                  20260501_141204
+Rounds completed:           9
+Attack-active rounds:       0  (from round 99999)
+Final accuracy:             0.1472
+Final test loss:            15.9832
+Final epsilon:              8.11
+Best alpha:                 2.5
+Avg precision:              0.0000
+Avg recall:                 0.0000
+Avg F1 score:               0.0000
+Avg update norm (honest):   21.0575
+Avg update norm (attacker): 0.0000
+============================================================
