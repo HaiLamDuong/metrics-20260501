@@ -1,0 +1,18 @@
+2026-05-01 16:52:44 | INFO    | dpfl | Experiment start: algorithm=dp_fedavg, dataset=femnist, model=lenet5, device=cuda
+2026-05-01 16:52:44 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=300, noise_mode=post_training, attack=scale
+2026-05-01 16:52:44 | INFO    | dpfl.data.femnist_dataset | Loading FEMNIST (EMNIST byclass) dataset...
+2026-05-01 16:52:45 | INFO    | dpfl.data.femnist_dataset | FEMNIST loaded: 697932 train, 116323 test samples
+2026-05-01 16:58:08 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=66126, X_test=(116323, 1, 28, 28), train clients N=300, max_n_samples=12000
+2026-05-01 16:58:08 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=66126, split=iid
+2026-05-01 16:58:08 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 16:58:08 | INFO    | dpfl.algorithms.fedavg.simulator | FedAvg data_sizes set: min=12000, max=12000, total=3600000
+2026-05-01 16:58:45 | INFO    | dpfl.core.base_simulator | Round   1/300 | Acc: 0.0196 | Loss: 4.4888 | eps: 2.13 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 16:58:45 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.74', '25.72', '25.72', '25.74', '25.75'], attacker: []
+2026-05-01 16:59:22 | INFO    | dpfl.core.base_simulator | Round   2/300 | Acc: 0.0205 | Loss: 8.1876 | eps: 2.50 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 16:59:22 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.62', '25.72', '25.68', '25.60', '25.60'], attacker: []
+2026-05-01 16:59:59 | INFO    | dpfl.core.base_simulator | Round   3/300 | Acc: 0.0204 | Loss: 15.7852 | eps: 2.64 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 16:59:59 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.76', '25.66', '25.68', '25.80', '25.67'], attacker: []
+2026-05-01 17:00:37 | INFO    | dpfl.core.base_simulator | Round   4/300 | Acc: 0.0183 | Loss: 26.9812 | eps: 2.77 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:00:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.73', '25.81', '25.74', '25.68', '25.76'], attacker: []
+2026-05-01 17:01:14 | INFO    | dpfl.core.base_simulator | Round   5/300 | Acc: 0.0195 | Loss: 40.0430 | eps: 2.90 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:01:14 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['25.64', '25.79', '25.72', '25.60', '25.54'], attacker: []

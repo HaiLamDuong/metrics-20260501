@@ -1,0 +1,300 @@
+2026-05-01 17:12:24 | INFO    | dpfl | Experiment start: algorithm=noise_game, dataset=mnist, model=mlp, device=cuda
+2026-05-01 17:12:24 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=50, noise_mode=none, attack=scale
+2026-05-01 17:12:24 | INFO    | dpfl.data.mnist_dataset | Loading MNIST dataset...
+2026-05-01 17:12:24 | INFO    | dpfl.data.mnist_dataset | MNIST loaded: 60000 train, 10000 test samples
+2026-05-01 17:13:34 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=25450, X_test=(10000, 1, 28, 28), train clients N=300, max_n_samples=2000
+2026-05-01 17:13:34 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=25450, split=iid
+2026-05-01 17:13:34 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 17:13:37 | INFO    | dpfl.core.base_simulator | Round   1/50 | Acc: 0.3621 | Loss: 1.9553 | eps_max: 1.29 eps_avg: 0.03 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.19', '3.20', '3.20', '3.18', '3.16'], attacker: []
+2026-05-01 17:13:40 | INFO    | dpfl.core.base_simulator | Round   2/50 | Acc: 0.5746 | Loss: 1.5595 | eps_max: 1.31 eps_avg: 0.09 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:40 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.17', '3.17', '3.15', '3.18', '3.15'], attacker: []
+2026-05-01 17:13:44 | INFO    | dpfl.core.base_simulator | Round   3/50 | Acc: 0.7334 | Loss: 1.2179 | eps_max: 1.34 eps_avg: 0.15 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:44 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.12', '3.11', '3.14', '3.12', '3.13'], attacker: []
+2026-05-01 17:13:49 | INFO    | dpfl.core.base_simulator | Round   4/50 | Acc: 0.7832 | Loss: 0.9850 | eps_max: 1.36 eps_avg: 0.23 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:49 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.08', '3.11', '3.10', '3.11', '3.10'], attacker: []
+2026-05-01 17:13:54 | INFO    | dpfl.core.base_simulator | Round   5/50 | Acc: 0.8121 | Loss: 0.8305 | eps_max: 1.37 eps_avg: 0.29 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:54 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.07', '3.07', '3.08', '3.07', '3.05'], attacker: []
+2026-05-01 17:13:59 | INFO    | dpfl.core.base_simulator | Round   6/50 | Acc: 0.8291 | Loss: 0.7303 | eps_max: 1.41 eps_avg: 0.31 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:13:59 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.02', '5.12', '5.38', '3.04', '5.39'], attacker: []
+2026-05-01 17:14:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 39 round 6: NSR=2274.42 exceeds 2000.0
+2026-05-01 17:14:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 215 round 6: NSR=2136.15 exceeds 2000.0
+2026-05-01 17:14:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 278 round 6: NSR=2538.73 exceeds 2000.0
+2026-05-01 17:14:04 | INFO    | dpfl.core.base_simulator | Round   7/50 | Acc: 0.8421 | Loss: 0.6570 | eps_max: 1.41 eps_avg: 0.37 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:04 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['5.37', '3.01', '4.89', '3.01', '3.02'], attacker: []
+2026-05-01 17:14:06 | WARNING | dpfl.algorithms.noise_game.simulator | Node 18 round 7: NSR=2173.87 exceeds 2000.0
+2026-05-01 17:14:06 | WARNING | dpfl.algorithms.noise_game.simulator | Node 19 round 7: NSR=2683.39 exceeds 2000.0
+2026-05-01 17:14:06 | WARNING | dpfl.algorithms.noise_game.simulator | Node 34 round 7: NSR=2869.84 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 69 round 7: NSR=2261.05 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 97 round 7: NSR=2217.87 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 108 round 7: NSR=2208.67 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 116 round 7: NSR=2179.49 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 140 round 7: NSR=2227.12 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 142 round 7: NSR=2268.43 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 145 round 7: NSR=2173.01 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 161 round 7: NSR=2251.92 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 175 round 7: NSR=2200.40 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 178 round 7: NSR=2197.00 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 189 round 7: NSR=2192.87 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 216 round 7: NSR=2351.37 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 233 round 7: NSR=2251.33 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 269 round 7: NSR=2152.70 exceeds 2000.0
+2026-05-01 17:14:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 298 round 7: NSR=2287.40 exceeds 2000.0
+2026-05-01 17:14:09 | INFO    | dpfl.core.base_simulator | Round   8/50 | Acc: 0.8505 | Loss: 0.6054 | eps_max: 1.42 eps_avg: 0.43 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:09 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.96', '4.60', '4.12', '2.98', '2.98'], attacker: []
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 12 round 8: NSR=2466.90 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 13 round 8: NSR=2480.09 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 18 round 8: NSR=2368.72 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 19 round 8: NSR=2207.15 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 35 round 8: NSR=2572.52 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 70 round 8: NSR=2462.56 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 80 round 8: NSR=2427.51 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 108 round 8: NSR=2369.16 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 110 round 8: NSR=2476.09 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 113 round 8: NSR=2494.88 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 137 round 8: NSR=2479.38 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 138 round 8: NSR=2518.31 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 158 round 8: NSR=3326.66 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 191 round 8: NSR=2479.14 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 194 round 8: NSR=2500.21 exceeds 2000.0
+2026-05-01 17:14:12 | WARNING | dpfl.algorithms.noise_game.simulator | Node 201 round 8: NSR=2580.71 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 203 round 8: NSR=2569.82 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 237 round 8: NSR=2459.21 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 269 round 8: NSR=2368.64 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 271 round 8: NSR=3599.45 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 275 round 8: NSR=2785.56 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 276 round 8: NSR=2480.37 exceeds 2000.0
+2026-05-01 17:14:13 | WARNING | dpfl.algorithms.noise_game.simulator | Node 280 round 8: NSR=3281.44 exceeds 2000.0
+2026-05-01 17:14:14 | INFO    | dpfl.core.base_simulator | Round   9/50 | Acc: 0.8553 | Loss: 0.5699 | eps_max: 1.46 eps_avg: 0.49 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:14 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.96', '2.95', '4.54', '6.73', '2.94'], attacker: []
+2026-05-01 17:14:15 | WARNING | dpfl.algorithms.noise_game.simulator | Node 2 round 9: NSR=3241.99 exceeds 2000.0
+2026-05-01 17:14:15 | WARNING | dpfl.algorithms.noise_game.simulator | Node 7 round 9: NSR=2743.73 exceeds 2000.0
+2026-05-01 17:14:15 | WARNING | dpfl.algorithms.noise_game.simulator | Node 20 round 9: NSR=3683.09 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 31 round 9: NSR=2767.01 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 38 round 9: NSR=3690.60 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 40 round 9: NSR=2878.81 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 68 round 9: NSR=3230.03 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 75 round 9: NSR=3632.56 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 156 round 9: NSR=2802.73 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 167 round 9: NSR=2749.40 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 185 round 9: NSR=2774.68 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 195 round 9: NSR=2709.61 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 201 round 9: NSR=2067.68 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 244 round 9: NSR=2784.49 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 258 round 9: NSR=2792.20 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 262 round 9: NSR=3031.20 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 263 round 9: NSR=3563.63 exceeds 2000.0
+2026-05-01 17:14:16 | WARNING | dpfl.algorithms.noise_game.simulator | Node 296 round 9: NSR=2756.64 exceeds 2000.0
+2026-05-01 17:14:18 | INFO    | dpfl.core.base_simulator | Round  10/50 | Acc: 0.8605 | Loss: 0.5392 | eps_max: 1.48 eps_avg: 0.54 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:18 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['4.73', '2.91', '3.75', '2.92', '3.79'], attacker: []
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 0 round 10: NSR=3000.78 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 3 round 10: NSR=3037.81 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 8 round 10: NSR=3378.93 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 21 round 10: NSR=3103.17 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 54 round 10: NSR=2915.22 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 74 round 10: NSR=2959.30 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 97 round 10: NSR=3211.03 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 102 round 10: NSR=3041.33 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 121 round 10: NSR=2935.67 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 154 round 10: NSR=3008.80 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 162 round 10: NSR=3029.51 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 210 round 10: NSR=3069.50 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 239 round 10: NSR=3031.76 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 263 round 10: NSR=2455.63 exceeds 2000.0
+2026-05-01 17:14:19 | WARNING | dpfl.algorithms.noise_game.simulator | Node 264 round 10: NSR=4184.85 exceeds 2000.0
+2026-05-01 17:14:20 | WARNING | dpfl.algorithms.noise_game.simulator | Node 285 round 10: NSR=2976.56 exceeds 2000.0
+2026-05-01 17:14:20 | WARNING | dpfl.algorithms.noise_game.simulator | Node 289 round 10: NSR=2956.86 exceeds 2000.0
+2026-05-01 17:14:20 | WARNING | dpfl.algorithms.noise_game.simulator | Node 295 round 10: NSR=2784.31 exceeds 2000.0
+2026-05-01 17:14:20 | WARNING | dpfl.algorithms.noise_game.simulator | Node 296 round 10: NSR=3033.78 exceeds 2000.0
+2026-05-01 17:14:21 | INFO    | dpfl.core.base_simulator | Round  11/50 | Acc: 0.8642 | Loss: 0.5172 | eps_max: 1.49 eps_avg: 0.60 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:21 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.89', '2.92', '5.02', '2.91', '2.89'], attacker: []
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 1 round 11: NSR=3267.06 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 3 round 11: NSR=3098.71 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 12 round 11: NSR=3432.76 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 30 round 11: NSR=3282.91 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 39 round 11: NSR=3372.74 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 46 round 11: NSR=3179.82 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 48 round 11: NSR=3281.63 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 57 round 11: NSR=3361.74 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 102 round 11: NSR=3159.06 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 105 round 11: NSR=3133.60 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 151 round 11: NSR=4421.61 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 175 round 11: NSR=3355.29 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 193 round 11: NSR=3313.02 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 219 round 11: NSR=3212.40 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 228 round 11: NSR=3279.14 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 248 round 11: NSR=3469.87 exceeds 2000.0
+2026-05-01 17:14:23 | WARNING | dpfl.algorithms.noise_game.simulator | Node 258 round 11: NSR=3176.71 exceeds 2000.0
+2026-05-01 17:14:25 | INFO    | dpfl.core.base_simulator | Round  12/50 | Acc: 0.8663 | Loss: 0.5013 | eps_max: 1.53 eps_avg: 0.64 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:25 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.85', '3.72', '4.85', '2.87', '7.33'], attacker: []
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 28 round 12: NSR=3531.07 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 29 round 12: NSR=3492.89 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 68 round 12: NSR=3046.12 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 90 round 12: NSR=3855.39 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 99 round 12: NSR=3329.09 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 101 round 12: NSR=3542.29 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 191 round 12: NSR=3591.68 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 224 round 12: NSR=3443.68 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 229 round 12: NSR=4391.18 exceeds 2000.0
+2026-05-01 17:14:26 | WARNING | dpfl.algorithms.noise_game.simulator | Node 286 round 12: NSR=3498.12 exceeds 2000.0
+2026-05-01 17:14:28 | INFO    | dpfl.core.base_simulator | Round  13/50 | Acc: 0.8694 | Loss: 0.4832 | eps_max: 1.56 eps_avg: 0.67 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:28 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['6.79', '2.82', '5.40', '7.19', '4.99'], attacker: []
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 50 round 13: NSR=4363.59 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 80 round 13: NSR=3995.73 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 82 round 13: NSR=3598.13 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 92 round 13: NSR=3652.83 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 145 round 13: NSR=3890.83 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 153 round 13: NSR=3669.16 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 159 round 13: NSR=4697.86 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 163 round 13: NSR=3590.26 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 166 round 13: NSR=3546.19 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 170 round 13: NSR=4527.70 exceeds 2000.0
+2026-05-01 17:14:30 | WARNING | dpfl.algorithms.noise_game.simulator | Node 219 round 13: NSR=3786.64 exceeds 2000.0
+2026-05-01 17:14:31 | WARNING | dpfl.algorithms.noise_game.simulator | Node 221 round 13: NSR=5009.07 exceeds 2000.0
+2026-05-01 17:14:31 | WARNING | dpfl.algorithms.noise_game.simulator | Node 239 round 13: NSR=3899.96 exceeds 2000.0
+2026-05-01 17:14:31 | WARNING | dpfl.algorithms.noise_game.simulator | Node 240 round 13: NSR=3624.36 exceeds 2000.0
+2026-05-01 17:14:31 | WARNING | dpfl.algorithms.noise_game.simulator | Node 244 round 13: NSR=3863.51 exceeds 2000.0
+2026-05-01 17:14:31 | WARNING | dpfl.algorithms.noise_game.simulator | Node 286 round 13: NSR=3723.98 exceeds 2000.0
+2026-05-01 17:14:33 | INFO    | dpfl.core.base_simulator | Round  14/50 | Acc: 0.8712 | Loss: 0.4757 | eps_max: 1.64 eps_avg: 0.70 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:33 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['4.39', '4.84', '2.79', '2.81', '4.85'], attacker: []
+2026-05-01 17:14:35 | WARNING | dpfl.algorithms.noise_game.simulator | Node 17 round 14: NSR=5064.87 exceeds 2000.0
+2026-05-01 17:14:35 | WARNING | dpfl.algorithms.noise_game.simulator | Node 37 round 14: NSR=3938.34 exceeds 2000.0
+2026-05-01 17:14:35 | WARNING | dpfl.algorithms.noise_game.simulator | Node 68 round 14: NSR=2127.49 exceeds 2000.0
+2026-05-01 17:14:35 | WARNING | dpfl.algorithms.noise_game.simulator | Node 73 round 14: NSR=3934.29 exceeds 2000.0
+2026-05-01 17:14:36 | WARNING | dpfl.algorithms.noise_game.simulator | Node 119 round 14: NSR=3768.23 exceeds 2000.0
+2026-05-01 17:14:36 | WARNING | dpfl.algorithms.noise_game.simulator | Node 161 round 14: NSR=4336.96 exceeds 2000.0
+2026-05-01 17:14:36 | WARNING | dpfl.algorithms.noise_game.simulator | Node 172 round 14: NSR=3782.98 exceeds 2000.0
+2026-05-01 17:14:36 | WARNING | dpfl.algorithms.noise_game.simulator | Node 262 round 14: NSR=3599.51 exceeds 2000.0
+2026-05-01 17:14:36 | WARNING | dpfl.algorithms.noise_game.simulator | Node 280 round 14: NSR=4266.20 exceeds 2000.0
+2026-05-01 17:14:38 | INFO    | dpfl.core.base_simulator | Round  15/50 | Acc: 0.8736 | Loss: 0.4602 | eps_max: 1.64 eps_avg: 0.73 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:38 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.83', '2.79', '8.36', '2.78', '2.76'], attacker: []
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 16 round 15: NSR=5363.73 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 30 round 15: NSR=4180.56 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 39 round 15: NSR=3224.54 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 80 round 15: NSR=3625.32 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 83 round 15: NSR=4050.43 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 96 round 15: NSR=4088.70 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 109 round 15: NSR=4101.36 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 118 round 15: NSR=4046.48 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 182 round 15: NSR=6165.29 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 222 round 15: NSR=4016.55 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 224 round 15: NSR=4071.64 exceeds 2000.0
+2026-05-01 17:14:40 | WARNING | dpfl.algorithms.noise_game.simulator | Node 229 round 15: NSR=4006.98 exceeds 2000.0
+2026-05-01 17:14:41 | WARNING | dpfl.algorithms.noise_game.simulator | Node 241 round 15: NSR=3928.85 exceeds 2000.0
+2026-05-01 17:14:41 | WARNING | dpfl.algorithms.noise_game.simulator | Node 269 round 15: NSR=4238.60 exceeds 2000.0
+2026-05-01 17:14:41 | WARNING | dpfl.algorithms.noise_game.simulator | Node 280 round 15: NSR=2474.24 exceeds 2000.0
+2026-05-01 17:14:41 | WARNING | dpfl.algorithms.noise_game.simulator | Node 289 round 15: NSR=4343.33 exceeds 2000.0
+2026-05-01 17:14:43 | INFO    | dpfl.core.base_simulator | Round  16/50 | Acc: 0.8740 | Loss: 0.4532 | eps_max: 1.70 eps_avg: 0.76 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:43 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['3.79', '4.96', '8.49', '6.35', '2.76'], attacker: []
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 7 round 16: NSR=4513.14 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 20 round 16: NSR=4491.72 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 28 round 16: NSR=3143.86 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 32 round 16: NSR=4131.19 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 34 round 16: NSR=4705.13 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 38 round 16: NSR=4469.46 exceeds 2000.0
+2026-05-01 17:14:45 | WARNING | dpfl.algorithms.noise_game.simulator | Node 105 round 16: NSR=4454.17 exceeds 2000.0
+2026-05-01 17:14:46 | WARNING | dpfl.algorithms.noise_game.simulator | Node 121 round 16: NSR=4451.90 exceeds 2000.0
+2026-05-01 17:14:46 | WARNING | dpfl.algorithms.noise_game.simulator | Node 187 round 16: NSR=4106.05 exceeds 2000.0
+2026-05-01 17:14:46 | WARNING | dpfl.algorithms.noise_game.simulator | Node 196 round 16: NSR=4241.43 exceeds 2000.0
+2026-05-01 17:14:46 | WARNING | dpfl.algorithms.noise_game.simulator | Node 276 round 16: NSR=4831.92 exceeds 2000.0
+2026-05-01 17:14:48 | INFO    | dpfl.core.base_simulator | Round  17/50 | Acc: 0.8757 | Loss: 0.4440 | eps_max: 1.72 eps_avg: 0.78 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:48 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['4.78', '7.16', '8.82', '2.73', '6.96'], attacker: []
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 18 round 17: NSR=4929.61 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 34 round 17: NSR=2600.11 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 52 round 17: NSR=4218.89 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 70 round 17: NSR=5214.58 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 74 round 17: NSR=4618.72 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 102 round 17: NSR=4702.59 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 122 round 17: NSR=4229.61 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 133 round 17: NSR=5917.06 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 146 round 17: NSR=4517.10 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 147 round 17: NSR=4123.32 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 194 round 17: NSR=4993.42 exceeds 2000.0
+2026-05-01 17:14:50 | WARNING | dpfl.algorithms.noise_game.simulator | Node 208 round 17: NSR=4244.41 exceeds 2000.0
+2026-05-01 17:14:51 | WARNING | dpfl.algorithms.noise_game.simulator | Node 243 round 17: NSR=5970.38 exceeds 2000.0
+2026-05-01 17:14:51 | WARNING | dpfl.algorithms.noise_game.simulator | Node 250 round 17: NSR=4412.78 exceeds 2000.0
+2026-05-01 17:14:51 | WARNING | dpfl.algorithms.noise_game.simulator | Node 267 round 17: NSR=4465.21 exceeds 2000.0
+2026-05-01 17:14:51 | WARNING | dpfl.algorithms.noise_game.simulator | Node 287 round 17: NSR=4464.38 exceeds 2000.0
+2026-05-01 17:14:53 | INFO    | dpfl.core.base_simulator | Round  18/50 | Acc: 0.8772 | Loss: 0.4353 | eps_max: 1.76 eps_avg: 0.83 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:53 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['5.98', '6.28', '2.69', '4.44', '4.73'], attacker: []
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 24 round 18: NSR=4429.38 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 38 round 18: NSR=2943.61 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 51 round 18: NSR=4439.46 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 54 round 18: NSR=4811.59 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 67 round 18: NSR=4261.09 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 71 round 18: NSR=4592.66 exceeds 2000.0
+2026-05-01 17:14:55 | WARNING | dpfl.algorithms.noise_game.simulator | Node 97 round 18: NSR=4682.01 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 106 round 18: NSR=4405.87 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 107 round 18: NSR=5602.53 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 109 round 18: NSR=4630.87 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 114 round 18: NSR=4687.14 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 158 round 18: NSR=5199.91 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 180 round 18: NSR=6487.56 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 183 round 18: NSR=4400.28 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 223 round 18: NSR=7482.57 exceeds 2000.0
+2026-05-01 17:14:56 | WARNING | dpfl.algorithms.noise_game.simulator | Node 275 round 18: NSR=5161.46 exceeds 2000.0
+2026-05-01 17:14:57 | INFO    | dpfl.core.base_simulator | Round  19/50 | Acc: 0.8782 | Loss: 0.4292 | eps_max: 1.82 eps_avg: 0.88 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:14:57 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.66', '7.05', '2.65', '4.90', '2.64'], attacker: []
+2026-05-01 17:14:58 | WARNING | dpfl.algorithms.noise_game.simulator | Node 3 round 19: NSR=5602.14 exceeds 2000.0
+2026-05-01 17:14:58 | WARNING | dpfl.algorithms.noise_game.simulator | Node 18 round 19: NSR=3026.03 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 19 round 19: NSR=5218.44 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 42 round 19: NSR=5982.93 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 44 round 19: NSR=4597.07 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 81 round 19: NSR=4523.28 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 109 round 19: NSR=2716.18 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 111 round 19: NSR=4356.63 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 138 round 19: NSR=5635.68 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 245 round 19: NSR=4421.03 exceeds 2000.0
+2026-05-01 17:14:59 | WARNING | dpfl.algorithms.noise_game.simulator | Node 288 round 19: NSR=4383.59 exceeds 2000.0
+2026-05-01 17:15:00 | INFO    | dpfl.core.base_simulator | Round  20/50 | Acc: 0.8785 | Loss: 0.4257 | eps_max: 1.82 eps_avg: 0.91 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:15:00 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['5.12', '7.18', '6.84', '5.37', '2.66'], attacker: []
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 10 round 20: NSR=4683.80 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 15 round 20: NSR=4472.44 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 20 round 20: NSR=3975.00 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 77 round 20: NSR=6934.67 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 81 round 20: NSR=4702.65 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 99 round 20: NSR=5593.68 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 101 round 20: NSR=5343.36 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 111 round 20: NSR=4136.44 exceeds 2000.0
+2026-05-01 17:15:01 | WARNING | dpfl.algorithms.noise_game.simulator | Node 119 round 20: NSR=5231.83 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 127 round 20: NSR=4570.34 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 129 round 20: NSR=4759.44 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 178 round 20: NSR=5610.71 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 189 round 20: NSR=6035.29 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 207 round 20: NSR=4599.32 exceeds 2000.0
+2026-05-01 17:15:02 | WARNING | dpfl.algorithms.noise_game.simulator | Node 240 round 20: NSR=5107.00 exceeds 2000.0
+2026-05-01 17:15:03 | INFO    | dpfl.core.base_simulator | Round  21/50 | Acc: 0.8801 | Loss: 0.4184 | eps_max: 1.82 eps_avg: 0.94 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:15:03 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['2.62', '2.59', '8.40', '3.09', '2.18'], attacker: []
+2026-05-01 17:15:04 | WARNING | dpfl.algorithms.noise_game.simulator | Node 8 round 21: NSR=5562.30 exceeds 2000.0
+2026-05-01 17:15:04 | WARNING | dpfl.algorithms.noise_game.simulator | Node 32 round 21: NSR=5391.55 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 85 round 21: NSR=6869.60 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 99 round 21: NSR=3025.59 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 123 round 21: NSR=4902.62 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 166 round 21: NSR=5694.08 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 179 round 21: NSR=4654.09 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 223 round 21: NSR=4986.79 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 226 round 21: NSR=4814.92 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 228 round 21: NSR=5514.21 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 263 round 21: NSR=5133.30 exceeds 2000.0
+2026-05-01 17:15:05 | WARNING | dpfl.algorithms.noise_game.simulator | Node 299 round 21: NSR=6572.35 exceeds 2000.0
+2026-05-01 17:15:06 | INFO    | dpfl.core.base_simulator | Round  22/50 | Acc: 0.8804 | Loss: 0.4155 | eps_max: 1.82 eps_avg: 0.96 | P: 0.00 R: 0.00 F1: 0.00
+2026-05-01 17:15:06 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['6.14', '4.18', '3.08', '4.51', '2.59'], attacker: []
+2026-05-01 17:15:07 | WARNING | dpfl.algorithms.noise_game.simulator | Node 0 round 22: NSR=5477.39 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 8 round 22: NSR=2557.77 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 18 round 22: NSR=2074.83 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 35 round 22: NSR=6250.90 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 52 round 22: NSR=5404.31 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 61 round 22: NSR=8571.09 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 87 round 22: NSR=4953.88 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 101 round 22: NSR=4084.13 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 109 round 22: NSR=3991.28 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 137 round 22: NSR=5997.30 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 140 round 22: NSR=6242.34 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 150 round 22: NSR=5174.25 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 189 round 22: NSR=5027.10 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 203 round 22: NSR=6121.05 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 206 round 22: NSR=5036.29 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 230 round 22: NSR=5095.90 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 233 round 22: NSR=6267.11 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 265 round 22: NSR=6301.86 exceeds 2000.0
+2026-05-01 17:15:08 | WARNING | dpfl.algorithms.noise_game.simulator | Node 266 round 22: NSR=4902.10 exceeds 2000.0
