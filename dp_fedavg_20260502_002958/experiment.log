@@ -1,0 +1,48 @@
+2026-05-02 00:29:58 | INFO    | dpfl | Experiment start: algorithm=dp_fedavg, dataset=femnist, model=lenet5, device=cuda
+2026-05-02 00:29:58 | INFO    | dpfl | Config: nodes=50, attackers=0, rounds=300, noise_mode=post_training, attack=scale
+2026-05-02 00:29:58 | INFO    | dpfl.data.femnist_dataset | Loading FEMNIST (EMNIST byclass) dataset...
+2026-05-02 00:29:59 | INFO    | dpfl.data.femnist_dataset | FEMNIST loaded: 697932 train, 116323 test samples
+2026-05-02 00:35:11 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=66126, X_test=(116323, 1, 28, 28), train clients N=50, max_n_samples=15000
+2026-05-02 00:35:11 | INFO    | dpfl.core.base_simulator | Setup complete: 50 nodes (0 attackers), param_dim=66126, split=iid
+2026-05-02 00:35:11 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-02 00:35:11 | INFO    | dpfl.algorithms.fedavg.simulator | FedAvg data_sizes set: min=15000, max=15000, total=750000
+2026-05-02 00:35:18 | INFO    | dpfl.core.base_simulator | Round   1/300 | Acc: 0.0145 | Loss: 158738.4890 | eps: 2.67 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:18 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['344.90', '344.70', '344.67', '344.94', '345.04'], attacker: []
+2026-05-02 00:35:25 | INFO    | dpfl.core.base_simulator | Round   2/300 | Acc: 0.0414 | Loss: nan | eps: 3.60 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:25 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', '343.62', '343.64', '344.23'], attacker: []
+2026-05-02 00:35:32 | INFO    | dpfl.core.base_simulator | Round   3/300 | Acc: 0.0462 | Loss: nan | eps: 4.28 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:32 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', '345.48', 'nan', 'nan'], attacker: []
+2026-05-02 00:35:39 | INFO    | dpfl.core.base_simulator | Round   4/300 | Acc: 0.0488 | Loss: nan | eps: 4.96 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:39 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:35:47 | INFO    | dpfl.core.base_simulator | Round   5/300 | Acc: 0.0497 | Loss: nan | eps: 5.42 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:47 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:35:54 | INFO    | dpfl.core.base_simulator | Round   6/300 | Acc: 0.0497 | Loss: nan | eps: 5.89 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:35:54 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:01 | INFO    | dpfl.core.base_simulator | Round   7/300 | Acc: 0.0497 | Loss: nan | eps: 6.36 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:36:01 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:08 | INFO    | dpfl.core.base_simulator | Round   8/300 | Acc: 0.0497 | Loss: nan | eps: 6.83 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:36:08 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:15 | INFO    | dpfl.core.base_simulator | Round   9/300 | Acc: 0.0497 | Loss: nan | eps: 7.29 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:36:15 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:22 | INFO    | dpfl.core.base_simulator | Round  10/300 | Acc: 0.0497 | Loss: nan | eps: 7.76 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:36:22 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:29 | INFO    | dpfl.core.base_simulator | Round  11/300 | Acc: 0.0497 | Loss: nan | eps: 8.09 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 00:36:29 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-02 00:36:29 | WARNING | dpfl.algorithms.fedavg.simulator | Round  11/300 | Budget exceeded (eps=8.09)
+2026-05-02 00:36:30 | INFO    | dpfl | Experiment complete in 390.7s
+============================================================
+REPORT: DP-SGD Decentralized Federated Learning
+============================================================
+Timestamp:                  20260502_002958
+Rounds completed:           11
+Attack-active rounds:       0  (from round 99999)
+Final accuracy:             0.0497
+Final test loss:            nan
+Final epsilon:              8.09
+Best alpha:                 3.0
+Avg precision:              0.0000
+Avg recall:                 0.0000
+Avg F1 score:               0.0000
+Avg update norm (honest):   nan
+Avg update norm (attacker): 0.0000
+============================================================

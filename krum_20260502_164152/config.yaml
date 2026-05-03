@@ -1,0 +1,44 @@
+dataset:
+    name: mnist
+    split:
+        mode: iid
+        samples_per_node: 1000
+        alpha: 1.0
+
+model:
+    name: mlp
+    hidden_size: 32
+
+topology:
+    n_nodes: 500
+    n_attackers: 0
+    n_neighbors: 200
+    seed: 42
+
+training:
+    n_rounds: 200
+    local_epochs: 1
+    batch_size: 64
+    lr: 0.01
+    n_workers: 5
+    use_vectorized: true
+    vmap_chunk: 0
+
+
+dp:
+  noise_mode: none            # No DP — plain Krum defense only
+  sampling_rate: 0.05  # Poisson client subsampling: 1.0 = all clients/round, <1 = sampled
+
+attack:
+  type: scale
+  scale_factor: 3.0
+
+aggregation:
+  type: krum
+  params:
+    n_attackers: 0            # expected number of Byzantine nodes (f)
+    multi_k: 1                # 1 = single Krum, >1 = Multi-Krum
+
+output_dir: ./results
+device: auto
+seed: 42

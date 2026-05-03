@@ -1,0 +1,9 @@
+2026-05-02 13:27:02 | INFO    | dpfl | Experiment start: algorithm=cfl_fedavg, dataset=mnist, model=mlp, device=cuda
+2026-05-02 13:27:02 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=50, noise_mode=none, attack=scale
+2026-05-02 13:27:02 | INFO    | dpfl.data.mnist_dataset | Loading MNIST dataset...
+2026-05-02 13:27:02 | INFO    | dpfl.data.mnist_dataset | MNIST loaded: 60000 train, 10000 test samples
+2026-05-02 13:27:52 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=25450, split=iid
+2026-05-02 13:27:52 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-02 13:27:52 | INFO    | dpfl.algorithms.cfl_fedavg.simulator | CFL-DP-FedAvg: K=300, q=0.100, S=0.0234, z=1.4500, σ=zS/(qW)=0.0011, DP=True
+2026-05-02 13:33:55 | INFO    | dpfl.core.base_simulator | Round   1/50 | Acc: 0.0899 | Loss: 2.3278 | eps: 1.03 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-02 13:33:55 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['0.34', '0.33', '0.34', '0.34', '0.34'], attacker: []

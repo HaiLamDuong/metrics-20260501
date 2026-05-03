@@ -1,0 +1,28 @@
+2026-05-01 17:28:13 | INFO    | dpfl | Experiment start: algorithm=dp_fedavg, dataset=femnist, model=lenet5, device=cuda
+2026-05-01 17:28:13 | INFO    | dpfl | Config: nodes=300, attackers=0, rounds=300, noise_mode=post_training, attack=scale
+2026-05-01 17:28:13 | INFO    | dpfl.data.femnist_dataset | Loading FEMNIST (EMNIST byclass) dataset...
+2026-05-01 17:28:14 | INFO    | dpfl.data.femnist_dataset | FEMNIST loaded: 697932 train, 116323 test samples
+2026-05-01 17:33:56 | INFO    | dpfl.core.base_simulator | Vectorized state ready: param_spec.D=66126, X_test=(116323, 1, 28, 28), train clients N=300, max_n_samples=15000
+2026-05-01 17:33:56 | INFO    | dpfl.core.base_simulator | Setup complete: 300 nodes (0 attackers), param_dim=66126, split=iid
+2026-05-01 17:33:56 | DEBUG   | dpfl.core.base_simulator | Attacker IDs: set()
+2026-05-01 17:33:56 | INFO    | dpfl.algorithms.fedavg.simulator | FedAvg data_sizes set: min=15000, max=15000, total=4500000
+2026-05-01 17:34:36 | INFO    | dpfl.core.base_simulator | Round   1/300 | Acc: 0.0183 | Loss: 11563.8629 | eps: 0.80 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:34:36 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['176.70', '176.60', '176.58', '176.72', '176.77'], attacker: []
+2026-05-01 17:35:17 | INFO    | dpfl.core.base_simulator | Round   2/300 | Acc: 0.0352 | Loss: nan | eps: 0.88 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:35:17 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['175.87', 'nan', 'nan', 'nan', '175.73'], attacker: []
+2026-05-01 17:35:57 | INFO    | dpfl.core.base_simulator | Round   3/300 | Acc: 0.0403 | Loss: nan | eps: 0.95 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:35:57 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:36:37 | INFO    | dpfl.core.base_simulator | Round   4/300 | Acc: 0.0432 | Loss: nan | eps: 0.98 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:36:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:37:17 | INFO    | dpfl.core.base_simulator | Round   5/300 | Acc: 0.0456 | Loss: nan | eps: 1.00 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:37:17 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:37:57 | INFO    | dpfl.core.base_simulator | Round   6/300 | Acc: 0.0461 | Loss: nan | eps: 1.01 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:37:57 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:38:37 | INFO    | dpfl.core.base_simulator | Round   7/300 | Acc: 0.0472 | Loss: nan | eps: 1.03 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:38:37 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:39:18 | INFO    | dpfl.core.base_simulator | Round   8/300 | Acc: 0.0477 | Loss: nan | eps: 1.04 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:39:18 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:39:58 | INFO    | dpfl.core.base_simulator | Round   9/300 | Acc: 0.0485 | Loss: nan | eps: 1.06 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:39:58 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
+2026-05-01 17:40:38 | INFO    | dpfl.core.base_simulator | Round  10/300 | Acc: 0.0486 | Loss: nan | eps: 1.07 | P: 1.00 R: 0.00 F1: 0.00
+2026-05-01 17:40:38 | DEBUG   | dpfl.core.base_simulator | Update norms — honest: ['nan', 'nan', 'nan', 'nan', 'nan'], attacker: []
